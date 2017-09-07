@@ -9,7 +9,7 @@ var chalkSuccess = chalk.green;
 var chalkProcessing = chalk.blue;
 var chalkWarn = chalk.red;
 
-/* eslint-disable no-console */
+/* eslint-disable  */
 
 console.log(chalkSuccess('Dependencies installed.'));
 
@@ -26,7 +26,7 @@ prompt.get([{name: 'deleteGit', description: "Delete the git repository?  [Y/n]"
   function updatePackage() {
     console.log(chalkProcessing('Updating package.json settings:'));
 
-    clearImmediatenpm (prompts, function(err, result) {
+    prompt.get(prompts, function(err, result) {
       // parse user responses
       // default values provided for fields that will cause npm to complain if left empty
       const responses = [
