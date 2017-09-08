@@ -1,7 +1,10 @@
 {
-  "name": "react-slingshot",
+  "name": "primer-starter-kit",
   "version": "7.0.0",
   "description": "Starter kit for creating apps with React and Redux",
+  "author": "Primer UI",
+  "email": "",
+  "license": "MIT",
   "engines": {
     "npm": ">=3"
   },
@@ -28,8 +31,6 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "Cory House",
-  "license": "MIT",
   "dependencies": {
     "object-assign": "4.1.0",
     "react": "15.5.4",
